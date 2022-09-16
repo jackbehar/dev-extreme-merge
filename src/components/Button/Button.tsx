@@ -1,18 +1,9 @@
 import React from "react";
+import ButtonM from 'devextreme-react/button';
+import { Properties } from "devextreme/ui/button";
 
-interface ButtonProps {
-  label: string;
-  disabled: boolean;
-  onClick(): void;
-}
-
-export default function Button(props: ButtonProps) {
+export default function Button(props: Properties) {
   return (
-    <button
-      onClick={props.onClick}
-      disabled={props.disabled}
-    >
-      {props.label}
-    </button>
+    <ButtonM {...props}/>
   );
 }

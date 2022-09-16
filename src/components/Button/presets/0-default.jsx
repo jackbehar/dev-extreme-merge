@@ -4,7 +4,7 @@ import Button from "../Button";
 export default (
   <Button
     uxpId="button"
-    disabled={false}
-    label="Button">
-  </Button>
+    text="click me!"
+    icon="favorites"
+  />
 );
